@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORMULÁRIO DE PESQUISA</title>
+    </head>
+
+    <body>
+        <h1>FORMULÁRIO DE PESQUISA DE SATISFAÇÃO</h1>
+        <form method="post" action="processar-pesquisa.html">
+
+            <section>
+                <h2>Dados Pessoais</h2>
+                <p>
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" id="nome"/>
+                </p>
+                <p>
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email"/>
+                </p>
+                <p>
+                    <label for="telefone"><strong>Telefone:</strong></label>
+                    <input type="tel"/>
+                </p>
+            </section><br><br><br>
+
+            <section>
+                <h2>Dados de Pesquisa</h2>
+                <p>
+                    <strong>Numa escala de 1 a 5, indique o nível de qualidade do atendimento prestado:</strong>
+                    <p>
+                        obs: considere 1(muito ruim), 2(ruim), 3(médio), 4(bom) e 5(muito bom).
+                    </p>
+                    <input type="radio" id="1" name="nível-atendimento"/>
+                    <label for="1">1</label>
+                    <input type="radio" id="2" name="nível-atendimento"/>
+                    <label for="2">2</label>
+                    <input type="radio" id="3" name="nível-atendimento"/>
+                    <label for="3">3</label>
+                    <input type="radio" id="4" name="nível-atendimento"/>
+                    <label for="4">4</label>
+                    <input type="radio" id="5" name="nível-atendimento"/>
+                    <label for="5">5</label>
+                </p>
+                <p>
+                    <strong>Numa escala de 1 a 5, indique o nível de satisfação em relação a resolução do problema:</strong>
+                    <p>
+                        obs: considere 1(muito ruim), 2(ruim), 3(médio), 4(bom) e 5(muito bom).
+                    </p>
+                    <input type="radio" id="1" name="nível-resolução"/>
+                    <label for="1">1</label>
+                    <input type="radio" id="2" name="nível-resolução"/>
+                    <label for="2">2</label>
+                    <input type="radio" id="3" name="nível-resolução"/>
+                    <label for="3">3</label>
+                    <input type="radio" id="4" name="nível-resolução"/>
+                    <label for="4">4</label>
+                    <input type="radio" id="5" name="nível-resolução"/>
+                    <label for="5">5</label>
+                </p>
+                <p>
+                    <label for="departamento"><strong>Departamento de Atendimento:</strong></label>
+                    <select>
+                        <option>Visita Técnica</option>
+                        <option>Problemas de Conexão</option>
+                        <option>Financeiro</option>
+                        <option>Comercial</option>
+                        <option>Logística</option>
+                        <option>Recursos Humanos</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="compartilhar-dados"/>
+                    <label for="compartilhar-dados"><strong>Autorizo o compartilhamento de meus dados com intuito de colaborar com a pesquisa.</strong></label>
+                </p>
+            </section>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</html>
